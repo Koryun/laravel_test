@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/form', 'FormController@show');
+Route::get('/form/list', 'FormController@index');
+Route::post('/form', 'FormController@store');
+Route::put('/form', 'FormController@update');
+Route::delete('/form', 'FormController@delete');
